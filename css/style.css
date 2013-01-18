@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  color: #666;
+  background-color: #FFF;
+  margin: 0;
+}
+
+a { 
+  color: #999;
+  text-decoration: none; 
+}
+
+a:hover { 
+  color: #FFF;
+  background: #666; 
+}
+
+img { 
+  border: none;
+  background: none;
+}
+
+a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
+  text-decoration: none;
+  border: 0 none;
+  background-color: transparent;
+}
+
+#limiter {
+  width: 853px;
+  margin: 0 auto;
+}
+
+#outline {
+  width: 363px;
+  margin: 0 auto;
+}
+
+#stare {
+  width: 363px;
+  height: 314px;
+  margin: 0;
+}
+
+#home {
+  display: block;
+  width: 363px;
+  height: 314px;
+  position: absolute;
+  background-color: transparent;
+}
+
+.nav {
+  width: 363px;
+  height: 35px;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.nav li {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+}
+
+.nav li a {
+  display: block;
+  height: 35px;
+}
+
+.drawings {left: 0px; width: 79px; background: url('../img/drawings.jpg') no-repeat;}
+.books {left: 87px; width: 65px; background: url('../img/books.jpg') no-repeat;}
+.skeleton {left: 160px; width: 33px; background: url('../img/skull.jpg') no-repeat;}
+.store {left: 201px; width: 92px; background: url('../img/buyprints.jpg') no-repeat;}
+.hypnotic_eye {left: 301px; width: 62px; background: url('../img/eye closed.jpg') no-repeat;}
+
+.drawings a:hover {left: 0px; width: 79px; background: url('../img/drawings black.jpg') no-repeat;}
+.books a:hover {left: 87px; width: 65px; background: url('../img/books black.jpg') no-repeat;}
+.skeleton a:hover {left: 160px; width: 33px; background: url('../img/skull black.jpg') no-repeat;}
+.store a:hover {left: 201px; width: 92px; background: url('../img/buyprints black.jpg') no-repeat;}
+.hypnotic_eye a:hover {left: 301px; width: 62px; background: url('../img/eye open.jpg') no-repeat;}
+
+#text {
+  width: 363px;
+  height: 47px;
+  margin: 0 0 6px 0;
+  text-align: center;
+}
+
+#wealldecayintime {
+  width: 363px;
+  height: 585px;
+  margin: 0 0 1px 0;
+}
+
+#contact {
+  width: 363px;
+  margin: 0;
+}
+
+#twitter {
+  float: left;
+  width: 181px;
+  height: 22px;
+  margin: 0;
+}
+
+#twitter img {
+  margin: 0 1px 0 0;
+}
+
+#twitter a:hover {
+  text-decoration: none;
+  border: 0 none;
+  background-color: transparent;
+}
+
+#email {
+  float: left;
+  width: 182px;
+  height: 20px;
+  margin: 0;
+  padding: 4px 0 0 0;
+  text-align: right;
+}
+
+#email_skeleton {
+  float: left;
+  width: 182px;
+  height: 20px;
+  margin: 0;
+  padding: 6px 0 0 0;
+  text-align: right;
+}
+
+#blog {
+  clear: both;
+  width: 363px;
+  margin: 0 0 56px 0;
+  text-align: right;
+}
+
+#space {
+  clear: both;
+  width: 363px;
+  margin: 0 0 56px 0;
+}
+
+/* drawings */
+
+#drawings {
+  width: 363px;
+  margin: 0 0 1px 0;
+}
+
+#drawings img {
+  margin: 0 0 -7px 0;
+}
+
+#drawings img.last {
+  margin: 0 0 -3px 0;
+}
+
+/* books */
+
+#black_eye {
+  width: 363px;
+  height: 576px;
+  margin: 0 0 1px 0;
+}
+
+#dreaming {
+  width: 363px;
+  height: 40px;
+  margin: 0 0 6px 0;
+  padding: 7px 0 0 0;
+  text-align: center;
+}
+
+/* skeleton */
+
+#skeleton {
+  width: 363px;
+  height: 300px;
+  margin: 0;
+}
+
+/* hypnotic eye */
+
+#bio {
+  width: 363px;
+  margin: -1px 0 30px 0;
+}

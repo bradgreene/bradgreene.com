@@ -1,0 +1,85 @@
+---
+---
+{% assign base = site.baseurl %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  {% if page.category == "drawings" %} <title>{{page.title}}</title> {% elsif page.category == "books" %} <title>{{page.title}}</title> {% elsif page.category == "skeleton" %} <title>{{page.title}}</title> {% elsif page.category == "hypnotic_eye" %} <title>{{page.title}}</title>
+  {% else %} <title>s t a r e</title> {% endif %}
+  <meta name="keywords" content="brad greene writers writer illustrators illustrator illustration comics comic graphic novels book drawing draw surreal ink art artist pencil dark dream experimental skeleton stare black eye minimalist ambient music musician">
+  <meta name="description" content="Brad Greene is an illustrator, comics artist, writer and musician. His experimental comic BLACK EYE is a dreaming look into a dark, surreal world.">
+  <link rel="shortcut icon" href="{{base}}/favicon.ico" />
+  <link href="{{base}}/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="limiter">
+  <div id="outline">
+    {% if page.category == "skeleton" %}
+    <div id="stare"><a id="home" href="{{base}}/"></a><img src="{{base}}/img/skeleton.jpg" width="363" height="412" alt="skeleton" /></div>
+    
+    {% elsif page.category == "hypnotic_eye" %}
+    <div id="stare"><a id="home" href="{{base}}/"></a><img src="{{base}}/img/hypnotic_eye.jpg" width="363" height="314" alt="hypnotic eye" /></div>
+    
+    {% else %}
+    <div id="stare"><a id="home" href="{{base}}/"></a><img src="{{base}}/img/stare home.jpg" width="363" height="314" alt="stare" /></div>
+        
+    {% endif %}
+    
+    <ul class="nav">
+      <li class="drawings"><a href="{{base}}/drawings"></a></li>
+      <li class="books"><a href="{{base}}/books"></a></li>
+      <li class="skeleton"><a href="{{base}}/skeleton"></a></li>
+      <li class="store"><a href="http://bradgreene.bigcartel.com/"></a></li>
+      <li class="hypnotic_eye"><a href="{{base}}/hypnotic_eye"></a></li>
+    </ul>
+        
+    {{content}}
+        
+    {% if page.category == "drawings" %}
+    <div id="contact">
+      <div id="twitter"><a href="http://www.twitter.com/stare_skeleton" title="Brad Greene on Twitter" target="_blank"><img src="{{base}}/img/t_small-b.png" width="22" height="22" alt="Brad Greene on Twitter"/></a></div>
+      <div id="email"><a href="mailto:brad@bradgreene.com" title="email me">brad@bradgreene.com</a></div>
+    </div>
+    
+    <div id="space"></div>
+    
+    {% elsif page.category == "books" %}
+    <div id="contact">
+      <div id="twitter"><a href="http://www.twitter.com/stare_skeleton" title="Brad Greene on Twitter" target="_blank"><img src="{{base}}/img/t_small-b.png" width="22" height="22" alt="Brad Greene on Twitter"/></a></div>
+      <div id="email"><a href="mailto:brad@bradgreene.com" title="email me">brad@bradgreene.com</a></div>
+    </div>
+    
+    <div id="space"></div>
+    
+    {% elsif page.category == "skeleton" %}
+    <div id="contact">
+      <div id="twitter"><a href="http://www.twitter.com/stare_skeleton" title="SKELETON on Twitter" target="_blank"><img src="{{base}}/img/t_small-b.png" width="22" height="22" alt="SKELETON on Twitter"/></a> <a href="https://www.facebook.com/stareskeleton" title="SKELETON on Facebook" target="_blank"><img src="{{base}}/img/f_logo.png" width="22" height="22" alt="SKELETON on Facebook"></a>  <a href="http://black-eye-stare.bandcamp.com/indexpage" title="SKELETON on Bandcamp" target="_blank"><img src="{{base}}/img/bc_logo.png" width="22" height="22" alt="SKELETON on Bandcamp"></a></div>
+      <div id="email_skeleton"><a href="mailto:brad@bradgreene.com" title="email me">brad@bradgreene.com</a></div>
+    </div>
+    
+    <div id="space"></div>
+    
+    {% elsif page.category == "hypnotic_eye" %}
+    <div id="contact">
+      <div id="twitter"><a href="http://www.twitter.com/stare_skeleton" title="Brad Greene on Twitter" target="_blank"><img src="{{base}}/img/t_small-b.png" width="22" height="22" alt="Brad Greene on Twitter"/></a></div>
+      <div id="email"><a href="mailto:brad@bradgreene.com" title="email me">brad@bradgreene.com</a></div>
+    </div>
+    
+    <div id="space"></div>
+    
+    {% else %}
+    <div id="contact">
+      <div id="twitter"><a href="http://www.twitter.com/stare_skeleton" title="Brad Greene on Twitter" target="_blank"><img src="{{base}}/img/t_small-b.png" width="22" height="22" alt="Brad Greene on Twitter"/></a></div>
+      <div id="email"><a href="mailto:brad@bradgreene.com" title="email me">brad@bradgreene.com</a></div>
+    </div>
+        
+    <div id="blog"><a href="http://black-eye-stare.blogspot.com/" target="_blank">View older posts</a></div>
+    
+    {% endif %}
+  </div>
+</div>
+</body>
+</html>
