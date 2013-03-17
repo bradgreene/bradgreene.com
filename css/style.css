@@ -16,7 +16,8 @@ a {
 
 a:hover { 
   color: #FFF;
-  background: #666; 
+  background: #666;
+  transition: color .2s ease, background .2s ease;
 }
 
 img { 
@@ -54,6 +55,8 @@ a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
   background-color: transparent;
 }
 
+/* old nav */
+/*
 .nav {
   width: 363px;
   height: 35px;
@@ -83,6 +86,230 @@ a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
 .skeleton a:hover {left: 160px; width: 33px; background: url('../img/skull black.jpg') no-repeat;}
 .store a:hover {left: 201px; width: 92px; background: url('../img/buyprints black.jpg') no-repeat;}
 .hypnotic_eye a:hover {left: 301px; width: 62px; background: url('../img/eye open.jpg') no-repeat;}
+*/
+
+/* nav */
+
+#nav {
+  width: 363px;
+  height: 35px;
+  margin: 0 0 10px 0;
+}
+
+#nav_drawings {
+	float: left;
+    position: relative;
+    width: 79px;
+    height: 35px;
+	margin: 0 8px 0 0;
+}
+
+#nav_drawings > img {
+    display: block;
+    width: 79px;
+    height: 35px;
+    position: absolute;/*
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;*/
+}
+
+#nav_drawings > img:nth-child(1) {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_drawings > img:nth-child(2) {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_drawings:hover > img:nth-child(1) { 
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_drawings:hover > img:nth-child(2) { 
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_books {
+	float: left;
+    position: relative;
+    width: 65px;
+    height: 35px;
+	margin: 0 8px 0 0;
+}
+
+#nav_books > img {
+    display: block;
+    width: 65px;
+    height: 35px;
+    position: absolute;/*
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;*/
+}
+
+#nav_books > img:nth-child(1) {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_books > img:nth-child(2) {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_books:hover > img:nth-child(1) { 
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_books:hover > img:nth-child(2) { 
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_skeleton {
+	float: left;
+    position: relative;
+    width: 33px;
+    height: 35px;
+	margin: 0 8px 0 0;
+}
+
+#nav_skeleton > img {
+    display: block;
+    width: 33px;
+    height: 35px;
+    position: absolute;/*
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;*/
+}
+
+#nav_skeleton > img:nth-child(1) {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_skeleton > img:nth-child(2) {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_skeleton:hover > img:nth-child(1) { 
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_skeleton:hover > img:nth-child(2) { 
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_store {
+	float: left;
+    position: relative;
+    width: 92px;
+    height: 35px;
+	margin: 0 8px 0 0;
+}
+
+#nav_store > img {
+    display: block;
+    width: 92px;
+    height: 35px;
+    position: absolute;/*
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;*/
+}
+
+#nav_store > img:nth-child(1) {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_store > img:nth-child(2) {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_store:hover > img:nth-child(1) { 
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_store:hover > img:nth-child(2) { 
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_hypnotic_eye {
+	float: left;
+    position: relative;
+    width: 62px;
+    height: 35px;
+	margin: 0;
+}
+
+#nav_hypnotic_eye > img {
+    display: block;
+    width: 62px;
+    height: 35px;
+    position: absolute;/*
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;*/
+}
+
+#nav_hypnotic_eye > img:nth-child(1) {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
+
+#nav_hypnotic_eye > img:nth-child(2) {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_hypnotic_eye:hover > img:nth-child(1) { 
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+}
+
+#nav_hypnotic_eye:hover > img:nth-child(2) { 
+    filter: alpha(opacity=100);
+    opacity: 1;
+    z-index: 2;
+}
 
 #text {
   width: 363px;
@@ -93,7 +320,7 @@ a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
 
 #wealldecayintime {
   width: 363px;
-  height: 585px;
+  height: 813px;
   margin: 0 0 1px 0;
 }
 
@@ -185,7 +412,7 @@ a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
 
 #skeleton {
   width: 363px;
-  height: 300px;
+  height: 585px;
   margin: 0;
 }
 
