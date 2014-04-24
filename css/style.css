@@ -411,8 +411,8 @@ a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
 /* skeleton */
 
 #skeleton {
-  width: 363px;
-  height: 585px;
+  width: 370px;
+  /*height: 585px;*/
   margin: 0;
 }
 
