@@ -1,30 +1,43 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-family: Trebuchet MS, Verdana;
   font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  color: #666;
+  font-size: 11px;
+  letter-spacing: .1em;
+  color: #333;
   background-color: #FFF;
   margin: 0;
 }
 
 a { 
-  color: #999;
+  color: #333;
+  text-decoration: none; 
+}
+
+a:link {
   text-decoration: none; 
 }
 
 a:hover { 
-  color: #FFF;
-  background: #666;
-  transition: color .2s ease, background .2s ease;
+  text-decoration: underline; 
 }
 
 img { 
-  border: none;
+  border: 1px solid #999;
+  outline: none;
   background: none;
 }
 
+a img { 
+  border: 1px solid #999;
+  outline: none;
+  background: none;
+}
+
+.noborder {
+  border: 0;
+  padding: 0;
+}
+    
 a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
   text-decoration: none;
   border: 0 none;
@@ -32,343 +45,117 @@ a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
 }
 
 #limiter {
-  width: 853px;
+  width: 960px;
   margin: 0 auto;
 }
 
 #outline {
-  width: 363px;
+  width: 500px;
+  height: 85px;
   margin: 0 auto;
 }
 
-#stare {
-  width: 363px;
-  height: 314px;
+#content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#content p {
   margin: 0;
+}
+
+#stare {
+  width: 500px;
+  height: 52px;
+  margin: 0;
+  font-family: 'Trebuchet MS', Verdana;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  line-height: 30px;
 }
 
 #home {
   display: block;
-  width: 363px;
-  height: 314px;
+  width: 500px;
+  height: 52px;
   position: absolute;
   background-color: transparent;
 }
-
-/* old nav */
-/*
-.nav {
-  width: 363px;
-  height: 35px;
-  margin: 0 0 10px 0;
-  position: relative;
-}
-
-.nav li {
-  list-style: none;
-  margin: 0;
-  position: absolute;
-}
-
-.nav li a {
-  display: block;
-  height: 35px;
-}
-
-.drawings {left: 0px; width: 79px; background: url('../img/drawings.jpg') no-repeat;}
-.books {left: 87px; width: 65px; background: url('../img/books.jpg') no-repeat;}
-.skeleton {left: 160px; width: 33px; background: url('../img/skull.jpg') no-repeat;}
-.store {left: 201px; width: 92px; background: url('../img/buyprints.jpg') no-repeat;}
-.hypnotic_eye {left: 301px; width: 62px; background: url('../img/eye closed.jpg') no-repeat;}
-
-.drawings a:hover {left: 0px; width: 79px; background: url('../img/drawings black.jpg') no-repeat;}
-.books a:hover {left: 87px; width: 65px; background: url('../img/books black.jpg') no-repeat;}
-.skeleton a:hover {left: 160px; width: 33px; background: url('../img/skull black.jpg') no-repeat;}
-.store a:hover {left: 201px; width: 92px; background: url('../img/buyprints black.jpg') no-repeat;}
-.hypnotic_eye a:hover {left: 301px; width: 62px; background: url('../img/eye open.jpg') no-repeat;}
-*/
 
 /* nav */
 
 #nav {
-  width: 363px;
-  height: 35px;
-  margin: 0 0 10px 0;
+  width: 215px;
+  overflow: auto;
+  top: 60px;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-#nav_drawings {
-	float: left;
-    position: relative;
-    width: 79px;
-    height: 35px;
-	margin: 0 8px 0 0;
+#nav ul {
+  font-family: Trebuchet MS, Verdana;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: .1em;
+  color: #333;
+  margin: 0 0 18px 0;
+  list-style-type: none;
+  list-style: none;
 }
 
-#nav_drawings > img {
-    display: block;
-    width: 79px;
-    height: 35px;
-    position: absolute;/*
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;*/
-}
-
-#nav_drawings > img:nth-child(1) {
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_drawings > img:nth-child(2) {
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_drawings:hover > img:nth-child(1) { 
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_drawings:hover > img:nth-child(2) { 
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_books {
-	float: left;
-    position: relative;
-    width: 65px;
-    height: 35px;
-	margin: 0 8px 0 0;
-}
-
-#nav_books > img {
-    display: block;
-    width: 65px;
-    height: 35px;
-    position: absolute;/*
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;*/
-}
-
-#nav_books > img:nth-child(1) {
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_books > img:nth-child(2) {
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_books:hover > img:nth-child(1) { 
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_books:hover > img:nth-child(2) { 
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_skeleton {
-	float: left;
-    position: relative;
-    width: 33px;
-    height: 35px;
-	margin: 0 8px 0 0;
-}
-
-#nav_skeleton > img {
-    display: block;
-    width: 33px;
-    height: 35px;
-    position: absolute;/*
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;*/
-}
-
-#nav_skeleton > img:nth-child(1) {
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_skeleton > img:nth-child(2) {
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_skeleton:hover > img:nth-child(1) { 
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_skeleton:hover > img:nth-child(2) { 
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_store {
-	float: left;
-    position: relative;
-    width: 92px;
-    height: 35px;
-	margin: 0 8px 0 0;
-}
-
-#nav_store > img {
-    display: block;
-    width: 92px;
-    height: 35px;
-    position: absolute;/*
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;*/
-}
-
-#nav_store > img:nth-child(1) {
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_store > img:nth-child(2) {
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_store:hover > img:nth-child(1) { 
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_store:hover > img:nth-child(2) { 
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_hypnotic_eye {
-	float: left;
-    position: relative;
-    width: 62px;
-    height: 35px;
-	margin: 0;
-}
-
-#nav_hypnotic_eye > img {
-    display: block;
-    width: 62px;
-    height: 35px;
-    position: absolute;/*
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;*/
-}
-
-#nav_hypnotic_eye > img:nth-child(1) {
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
-}
-
-#nav_hypnotic_eye > img:nth-child(2) {
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_hypnotic_eye:hover > img:nth-child(1) { 
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 1;
-}
-
-#nav_hypnotic_eye:hover > img:nth-child(2) { 
-    filter: alpha(opacity=100);
-    opacity: 1;
-    z-index: 2;
+#nav ul li.page {
+  font-family: Trebuchet MS, Verdana;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: .1em;
+  color: #333;
 }
 
 #text {
-  width: 363px;
-  height: 47px;
-  margin: 0 0 6px 0;
-  text-align: center;
+  width: 400px;
+  margin: 0 auto 20px auto;
 }
 
-#wealldecayintime {
-  width: 363px;
-  height: 813px;
-  margin: 0 0 1px 0;
+#title {
+  width: 500px;
+  margin: 0 auto 20px auto;
+}
+
+.pages {
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+  margin:0;
+}
+
+.pages li {
+  float: left;
+  padding: 0 10px;
+}
+    
+.drawing {
+  margin-bottom: 10px;
 }
 
 #contact {
-  width: 363px;
-  margin: 0;
+  width: 363.5px;
+  margin: 0 auto;
+  font-family: Lekton;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-#twitter {
-  float: left;
-  width: 181px;
-  height: 22px;
-  margin: 0;
-}
-
-#twitter img {
-  margin: 0 1px 0 0;
-}
-
-#twitter a:hover {
+#contact a:hover{
   text-decoration: none;
   border: 0 none;
   background-color: transparent;
-}
-
-#email {
-  float: left;
-  width: 182px;
-  height: 20px;
-  margin: 0;
-  padding: 4px 0 0 0;
-  text-align: right;
-}
-
-#email_skeleton {
-  float: left;
-  width: 182px;
-  height: 20px;
-  margin: 0;
-  padding: 6px 0 0 0;
-  text-align: right;
-}
-
-#blog {
-  clear: both;
-  width: 363px;
-  margin: 0 0 56px 0;
-  text-align: right;
 }
 
 #space {
@@ -379,46 +166,107 @@ a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
 
 /* drawings */
 
-#drawings {
-  width: 363px;
-  margin: 0 0 1px 0;
+#gallery {
+  width: 215px;
+  overflow: auto;
+  top: 60px;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0 0 0 600px;
+  /*margin: 0 0 0 570px;*/
 }
 
-#drawings img {
-  margin: 0 0 -7px 0;
+#gallery ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style: none;
 }
 
-#drawings img.last {
-  margin: 0 0 -3px 0;
+#gallery ul li.thumbnail {
+  margin: 0 10px 10px 0;
+  float: left;
+  border: 1px solid #999;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+}
+
+#gallery ul li.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+#gallery ul li.thumbnail img.landscape {
+  width: auto;
+  height: 100%;
+}
+
+#prevnext {
+  float: right;
+  text-align: right;
+  margin: 0 auto 20px auto;
+}
+
+.prev {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13, #img14, #img15, #img16, #img17, #img18 {
+  display: none;
 }
 
 /* books */
 
-#black_eye {
-  width: 363px;
-  height: 576px;
-  margin: 0 0 1px 0;
+.text_header {
+  padding-top: 30px;
+}
+
+/* skeleton */
+
+#skeleton {
+  width: 500px;
+  /*height: 585px;*/
+  margin: 0 auto;
 }
 
 #dreaming {
-  width: 363px;
   height: 40px;
   margin: 0 0 6px 0;
   padding: 7px 0 0 0;
   text-align: center;
 }
 
-/* skeleton */
-
-#skeleton {
-  width: 370px;
-  /*height: 585px;*/
-  margin: 0;
-}
-
-/* hypnotic eye */
+/* info */
 
 #bio {
-  width: 363px;
-  margin: -1px 0 30px 0;
+  width: 400px;
+  margin: 0 auto;
 }
